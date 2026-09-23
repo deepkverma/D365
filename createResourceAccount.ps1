@@ -1,7 +1,7 @@
 
 # Prompt the user for input
-$UserPrincipalName = Read-Host -Prompt "Enter the New Teams Resource Account email address, make sure that the email address is against the tenant being used for ex: test@contoso.com, here Contoso is my tenant I've logged into"
-$DisplayName = Read-Host -Prompt "Enter the New Teams Resource Account Name, ex: Teams Resource Account 1"
+$UserPrincipalName = Read-Host -Prompt "Enter the New Teams Resource Account email address"
+$DisplayName = Read-Host -Prompt "Enter the New Teams Resource Account Name, ex: D365 Sales Resource Account"
 $AppId = Read-Host -Prompt "Enter the Dynamics App ID from the phone number setting page"
 $AcsResourceId = Read-Host -Prompt "Enter the Organization's ACS immutable resource ID from the Dynamics Phone Number Setting Page"
 
