@@ -4,5 +4,5 @@ $AppId = Read-Host -Prompt "Enter the Dynamics App ID from the phone number sett
 $AcsResourceId = Read-Host -Prompt "Enter the Organization's ACS immutable resource ID from the Dynamics Phone Number Setting Page"
 $teamsResourceAccount = New-CsOnlineApplicationInstance -UserPrincipalName $UserPrincipalName -DisplayName $DisplayName -ApplicationID $AppId
 $TeamsResourceAccountId = $teamsResourceAccount.ObjectId
-$setAppInstanceOutput = Set-CsOnlineApplicationInstance -Identity $TeamsResourceAccountId -ApplicationId $AppId -AcsResourceId $AcsResourceId
+Set-CsOnlineApplicationInstance -Identity $TeamsResourceAccountId -ApplicationId $AppId -AcsResourceId $AcsResourceId
 Sync-CsOnlineApplicationInstance -ObjectId $TeamsResourceAccountId -ApplicationId $AppId -AcsResourceId $AcsResourceId
